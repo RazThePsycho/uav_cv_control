@@ -1,0 +1,25 @@
+<package format="2">
+  <version>1.0.0</version>
+  <name>profi2022_bachelor_solution</name>
+  <description>Bachelor solution example for yandex.ru/profi</description>
+
+  <author     email="ndema2301@gmail.com">Nikolay Dema</author>
+  <maintainer email="ndema2301@gmail.com">Nikolay Dema</maintainer>
+
+  <license>Apache License, Version 2.0</license>
+
+  <url type="website">https://gitlab.com/beerlab</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>hector_uav_msgs</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+
+
+  <export>
+  </export>
+
+</package>

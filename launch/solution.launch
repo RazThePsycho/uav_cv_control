@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="altitude_desired" default="10.0"/>
+  <arg name="px" default="4"/>
+  <arg name="py" default="2.8"/>
+  <arg name="pz" default="1.6"/>
+  <arg name="pxi" default="0"/>
+  <arg name="pyi" default="0"/>
+  <arg name="pzi" default="0"/>
+  <arg name="pxd" default="-0.5"/>
+  <arg name="pyd" default="-0.5"/>
+  <arg name="pzd" default="0"/>
+  <arg name="pyaw" default="1.2"/>
+  <param name="/profi2022_bachelor_solution/altitude_desired" type="double" value="$(arg altitude_desired)" />
+  <param name="/profi2022_bachelor_solution/px" type="double" value="$(arg px)" />
+  <param name="/profi2022_bachelor_solution/py" type="double" value="$(arg py)" />
+  <param name="/profi2022_bachelor_solution/pz" type="double" value="$(arg pz)" />
+  <param name="/profi2022_bachelor_solution/pxi" type="double" value="$(arg pxi)" />
+  <param name="/profi2022_bachelor_solution/pyi" type="double" value="$(arg pyi)" />
+  <param name="/profi2022_bachelor_solution/pzi" type="double" value="$(arg pzi)" />
+  <param name="/profi2022_bachelor_solution/pxd" type="double" value="$(arg pxd)" />
+  <param name="/profi2022_bachelor_solution/pyd" type="double" value="$(arg pyd)" />
+  <param name="/profi2022_bachelor_solution/pzd" type="double" value="$(arg pzd)" />
+  <param name="/profi2022_bachelor_solution/pyaw" type="double" value="$(arg pyaw)" />
+
+  <node name="quadrator_simple_move" pkg="profi2022_bachelor_solution" type="simple_move_node" output="screen" />
+
+</launch>
